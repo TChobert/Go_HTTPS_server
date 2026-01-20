@@ -9,7 +9,7 @@ import (
 
 type myHandler struct{}
 
-func (this myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+func (h myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello Go!\n")
 }
 
