@@ -21,5 +21,5 @@ func main() {
 		ReadTimeout: 3 * time.Second,
 		WriteTimeout: 3 * time.Second,
 	}
-	log.Fatal(server.ListenAndServe())
+	log.Fatal(server.ListenAndServeTLS())
 }
