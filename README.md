@@ -1,4 +1,7 @@
 # Go_webserver
+
+⚠️⚠️ IN PROGRESS ⚠️⚠️
+
 A simple implementation of a web server in Go, just for learning and experimenting.
 
 # Ressources / Documentation
