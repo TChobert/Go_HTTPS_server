@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"os"
 )
 
 type myHandler struct{}
@@ -21,5 +22,8 @@ func main() {
 		ReadTimeout: 3 * time.Second,
 		WriteTimeout: 3 * time.Second,
 	}
-	log.Fatal(server.ListenAndServeTLS())
+
+	certPath := os.Getenv("TLS_CERT_PATH")
+	keyPath := os.Getenv("TLS_KEY_PATH")
+	log.Fatal(server.ListenAndServeTLS(certPath, keyPath))
 }
