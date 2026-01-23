@@ -6,17 +6,17 @@ A simple implementation of a web server in Go, for learning and experimenting.
 
 # Objectives / pedagogical approach
 
-Creation and customization of a complete HTTPS web server, based on the standard net/http package and the key features of the Go language:
+=> Creation and customization of a complete HTTPS web server, based on the standard net/http package and the key features of the Go language:
   - Native TLS management,
   - API simplicity,
   - Consultation and use of official documentation as well as specialized articles and blogs.
 
-Understading the basic architecture and design of Go projects:
+=> Understading the basic architecture and design of Go projects:
   - Package management and interaction between them,
   - Writing scalable code that is open to future modifications and extensions,
   - Implement a complete and reusable module in different contexts and applications.
 
-Discovering, using, and integrating Go open-source packages:
+=> Discovering, using, and integrating Go open-source packages:
   - Using the chi package to manage request routing -> https://github.com/go-chi/chi
 
 MORE TO COME...
