@@ -24,9 +24,17 @@ MORE TO COME...
 
 # Ressources / Documentation
 
-https://pkg.go.dev/net/http
+=> general and basic notions:
 
 https://go.dev/tour/list
+
+=> net/http package:
+
+https://pkg.go.dev/net/http
+
+=> context package:
+
+https://pkg.go.dev/context
 
 # Useful tutorials
 
