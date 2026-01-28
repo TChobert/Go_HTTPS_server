@@ -52,3 +52,5 @@ https://www.baeldung.com/openssl-self-signed-cert
 => Best practices and projects structure:
 
 https://medium.com/@rosgluk/go-project-structure-practices-patterns-7bd5accdfd93
+
+https://www.oreateai.com/blog/go-file-naming-conventions/96bd3ff6e851dd60074d44e7a53caaa4#:~:text=Go%20file%20naming%20should%20adhere,Go%20packages%20except%20for%20the
