@@ -3,7 +3,12 @@ package server
 import (
 	"net/http"
 	"time"
+	"fmt"
 )
+
+func Shutdown() {
+	fmt.Println("Server stopped")
+}
 
 func RunTLS(srv *http.Server, certPath string, keyPath string) error {
 	return srv.ListenAndServeTLS(certPath, keyPath)

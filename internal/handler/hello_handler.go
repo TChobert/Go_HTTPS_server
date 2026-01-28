@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"fmt",
-	"net/http",
+	"fmt"
+	"net/http"
 	"time"
 )
 

@@ -19,7 +19,7 @@ func main() {
 	signalCtx, stop := signal.NotifyContext(
 		context.Background(),
 		os.Interrupt,
-		syscall.SIGTERM
+		syscall.SIGTERM,
 	)
 	defer stop() // this function is defered -> it will be called when main returns
 
