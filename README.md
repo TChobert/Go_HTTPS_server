@@ -10,7 +10,7 @@ A simple implementation of a HTTPS web server in Go, for learning and experiment
   - Native TLS management,
   - API simplicity,
   - Consultation and use of official documentation as well as specialized articles and blogs.
-  - Comprehension of technical concepts, tools and patterns like: interfaces, channels, OS signals handling, goroutines.
+  - Comprehension of technical concepts, tools and patterns like: interfaces, methods, channels, OS signals handling, goroutines.
   - Discovering and usage of Golang standard library packages like: context, net/http, os, syscall, time.
 
 => Understading the basic architecture and design of Go projects:
