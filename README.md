@@ -30,6 +30,8 @@ https://go.dev/tour/list
 
 # Useful tutorials
 
+=> Building a webserver (HTTPS) with Golang:
+
 https://blog.logrocket.com/creating-a-web-server-with-golang/
 
 https://dev.to/leapcell/mastering-go-web-servers-from-zero-to-hero-58i3
@@ -37,3 +39,7 @@ https://dev.to/leapcell/mastering-go-web-servers-from-zero-to-hero-58i3
 https://semihtekin.medium.com/building-a-high-performance-web-server-in-go-a-comprehensive-guide-d3a5ba327b03
 
 https://www.baeldung.com/openssl-self-signed-cert
+
+=> Best practices and projects structure:
+
+https://medium.com/@rosgluk/go-project-structure-practices-patterns-7bd5accdfd93
