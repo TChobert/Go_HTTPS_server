@@ -10,7 +10,7 @@ A simple implementation of a web server in Go, for learning and experimenting.
   - Native TLS management,
   - API simplicity,
   - Consultation and use of official documentation as well as specialized articles and blogs.
-  - Comprehension of technical concepts and patterns like interfaces.
+  - Comprehension of technical concepts, tools and patterns like interfaces, channels, signals handling, goroutines, context.
 
 => Understading the basic architecture and design of Go projects:
   - Package management and interaction between them,
