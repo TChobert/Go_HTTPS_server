@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"log"
+	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
@@ -26,8 +27,9 @@ func main() {
 	certPath := os.Getenv("TLS_CERT_PATH")
 	keyPath := os.Getenv("TLS_KEY_PATH")
 	go func() {
-		if err := server.RunTLS(srv, certPath, keyPath); err != nil {
-			log.Fatal(err)
+		err := server.RunTLS(srv, certPath, keyPath)
+		if err != nil && err != http.ErrServerClosed {
+			log.Fatalf("server error: %v", err)
 		}
 	}()
 	<-signalCtx.Done()
@@ -35,5 +37,7 @@ func main() {
 	shutdownCtx, cancel := context.WithTimeout(context.Background(), 5 * time.Second)
 	defer cancel()
 
-	server.Shutdown(shutdownCtx, srv)
+	if err := server.Shutdown(shutdownCtx, srv); err != nil {
+		log.Fatalf("shutdown error: %v", err)
+	}
 }
